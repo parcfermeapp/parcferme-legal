@@ -1,167 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PARC FERMÉ – Datenschutzerklärung / Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Datenschutzerklärung — PARC FERMÉ</title>
 <style>
-  :root{ --bg:#0a0c10; --panel:#12151b; --line:#242a33; --txt:#e7e9ee; --muted:#9aa3b2; --red:#ff2e43; --amber:#ffc400; }
-  *{ box-sizing:border-box; }
-  body{ margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.6; }
-  .wrap{ max-width:760px; margin:0 auto; padding:28px 20px 64px; }
-  header{ border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:22px; }
-  .brand{ font-weight:800; letter-spacing:.06em; text-transform:uppercase; font-size:20px; }
-  .brand span{ color:var(--red); }
-  h1{ font-size:22px; margin:14px 0 4px; }
-  h2{ font-size:17px; margin:26px 0 6px; }
-  p{ margin:8px 0; }
-  .muted{ color:var(--muted); font-size:14px; }
-  a{ color:var(--red); }
-  .draft{ border:1px solid var(--amber); background:rgba(255,196,0,.07); border-radius:8px; padding:11px 13px; font-size:14px; margin:16px 0; }
-  .note{ border:1px solid var(--line); background:var(--panel); border-radius:8px; padding:11px 13px; font-size:14px; margin:16px 0; }
-  .langbar{ display:flex; gap:8px; margin:16px 0 4px; }
-  .langbar button{ background:var(--panel); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:7px 14px; cursor:pointer; font-size:14px; }
-  .langbar button.on{ border-color:var(--red); color:#fff; }
-  section{ display:none; }
-  section.on{ display:block; }
-  code{ background:var(--panel); padding:1px 5px; border-radius:4px; color:var(--amber); font-size:.92em; }
-  footer{ margin-top:40px; border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:13px; }
+:root{
+  --bg:#0b0d12; --card:#12151c; --fg:#e8eaf0; --muted:#9aa3b2;
+  --red:#e8202a; --amber:#ffc400; --line:rgba(255,255,255,.09);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding:0 18px 80px}
+.wrap{max-width:760px;margin:0 auto}
+header{padding:34px 0 22px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.brand{font-weight:800;letter-spacing:.16em;font-size:13px;color:var(--red);
+  text-transform:uppercase;margin-bottom:10px}
+h1{font-size:30px;line-height:1.2;margin:0}
+h4{margin:26px 0 6px;font-size:16px;color:var(--fg)}
+p{margin:0 0 11px;color:#cfd4de}
+a{color:var(--red)}
+b{color:var(--fg)}
+nav{margin:22px 0 0;font-size:14px}
+nav a{margin-right:16px;display:inline-block;color:var(--muted);text-decoration:none;
+  border-bottom:1px solid transparent;padding-bottom:2px}
+nav a:hover,nav a[aria-current]{color:var(--fg);border-bottom-color:var(--red)}
+.draft{border:1px solid var(--amber);border-radius:8px;padding:11px 13px;
+  margin:0 0 22px;background:rgba(255,196,0,.07);color:var(--amber);font-size:14px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <div class="brand">PARC&nbsp;<span>FERMÉ</span>.</div>
-    <h1>Datenschutzerklärung / Privacy Policy</h1>
-    <p class="muted">PARC FERMÉ ist eine inoffizielle Fan-App und steht in keiner Verbindung zur FIA, zur Formula 1 oder den Teams.</p>
-  </header>
+<header>
+  <div class="brand">Parc Fermé</div>
+  <h1>Datenschutzerklärung</h1>
+  <nav><a href="imprint.html">Impressum</a><a href="terms-of-sale.html">AGB</a><a href="terms.html">Nutzungsbedingungen</a><a href="privacy.html" aria-current="page">Datenschutz</a><a href="storage.html">Speicher</a><a href="privacy.en.html" style="float:right">English</a></nav>
+</header>
+<div class="draft">Entwurf — die Platzhalter in eckigen Klammern sind noch nicht ersetzt. Nicht für den Produktivbetrieb.</div>
 
-  <div class="draft">● Entwurf – echte Angaben (Firmenname, Anschrift, Kontakt, Datum) einsetzen und rechtlich prüfen lassen. / Draft – insert real details and have it legally reviewed.</div>
+  <p><b>Stand:</b> [TT.MM.JJJJ]. Diese Erkl&auml;rung beschreibt, wie in der App PARC FERM&Eacute; und auf der zugeh&ouml;rigen Webseite personenbezogene Daten verarbeitet werden. PARC FERM&Eacute; ist eine inoffizielle Fan-App und steht in keiner Verbindung zur FIA, zur Formula 1 oder den Teams.</p>
 
-  <div class="langbar">
-    <button id="btn-de" class="on" onclick="setLang('de')">Deutsch</button>
-    <button id="btn-en" onclick="setLang('en')">English</button>
-  </div>
+  <h4>Das Wichtigste vorab</h4>
+  <p>Wir verkaufen keine Daten. Es gibt <b>keine Werbung, keine Werbenetzwerke, kein Analyse-Werkzeug und kein Nutzer-Tracking</b> &mdash; weder in der App noch auf der Webseite. Daten flie&szlig;en nur an die technischen Dienstleister, die den Betrieb erm&ouml;glichen (Abschnitt 5), und nur so weit, wie es die jeweilige Funktion erfordert.</p>
 
-  <!-- ================= DEUTSCH (verbindlich) ================= -->
-  <section id="de" class="on">
-    <p><b>Stand:</b> [Datum]. Diese Datenschutzerklärung beschreibt, wie in der App PARC FERMÉ personenbezogene Daten verarbeitet werden.</p>
+  <h4>1. Verantwortlicher</h4><p>[Name / Firmenname], [Stra&szlig;e &amp; Nr.], [PLZ, Ort], [Land]. E-Mail: [kontakt@deine-domain]. [Ggf. Datenschutzbeauftragte:r]. <i>Diese Angabe muss mit dem Impressum &uuml;bereinstimmen.</i></p>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>[Firmenname / Betreiber], [Straße &amp; Nr.], [PLZ, Ort], Deutschland. E-Mail: [kontakt@deine-domain]. [Ggf. Datenschutzbeauftragte:r].</p>
+  <h4>2. Welche Daten wir verarbeiten</h4>
+  <p><b>Kontodaten:</b> E-Mail-Adresse und Passwort &mdash; das Passwort wird nur als kryptografischer Pr&uuml;fwert gespeichert und ist f&uuml;r uns nicht einsehbar &mdash; oder alternativ die Anmeldung mit einem Google-Konto; dazu Anzeigename und optionale Profilangaben (Kurzbeschreibung, Profilbild, Lieblingsfahrer und -team, Benachrichtigungseinstellungen).</p>
+  <p><b>Von dir erstellte Inhalte:</b> Nachrichten im &ouml;ffentlichen Chat, im Watch-Along und in Ligen bzw. R&auml;umen, private Nachrichten, Kommentare, Bewertungen von Szenen (&bdquo;Wahre Wertung&ldquo;), Tipps im Tippspiel, Stimmen bei Fan-Abstimmungen, Feedback, Meldungen sowie deine Folge- und Follower-Beziehungen.</p>
+  <p><b>Spielergebnisse:</b> im Spiel &bdquo;Startampel&ldquo; die gemessenen Reaktionszeiten je Versuch und der Zeitpunkt des Versuchs; im Quiz &bdquo;Grill the Fan&ldquo; die gegebenen Antworten und der erreichte Punktestand. Diese Daten sind n&ouml;tig, um Ranglisten zu bilden und Manipulation zu erkennen.</p>
+  <p><b>Profilbild:</b> L&auml;dst du ein Bild hoch, wird es auf dem Ger&auml;t zugeschnitten und im Dateispeicher unseres Hosting-Dienstleisters abgelegt. Es ist f&uuml;r andere Nutzerinnen und Nutzer sichtbar.</p>
+  <p><b>Technische Daten:</b> Bei jeder Verbindung fallen technisch notwendige Daten an, insbesondere IP-Adresse und Zeitstempel, die unser Hosting-Dienstleister verarbeitet. Zeitstempel nutzen wir zus&auml;tzlich f&uuml;r Ratenbegrenzungen, die Spam und automatisierte Zugriffe verhindern.</p>
+  <p><b>Push-Kennung:</b> Aktivierst du Benachrichtigungen, wird eine ger&auml;tebezogene Push-Kennung (FCM-Token) erzeugt und gespeichert. Deaktivierst du Benachrichtigungen oder meldest dich ab, wird die Kennung entfernt; von Google als ung&uuml;ltig gemeldete Kennungen l&ouml;schen wir automatisch.</p>
+  <p><b>Nur auf deinem Ger&auml;t:</b> die gew&auml;hlte Sprache, eine Zwischenkopie deiner Profilangaben und Benachrichtigungseinstellungen, gelesene Schlagzeilen, gelesene Posteingangs-Eintr&auml;ge und die Best&auml;tigung des Datenschutzhinweises liegen im lokalen Speicher deines Ger&auml;ts (Abschnitt 8). Diese Eintr&auml;ge selbst erreichen uns nicht; die Profilangaben und Einstellungen liegen daneben auch in deinem Konto, weil sie ger&auml;te&uuml;bergreifend gelten sollen.</p>
 
-    <h2>2. Grundsatz</h2>
-    <p>Wir verarbeiten nur Daten, die für Anmeldung, Community-Funktionen und den Betrieb der App nötig sind. Es findet kein Werbe-Tracking statt.</p>
+  <h4>3. Wof&uuml;r wir die Daten nutzen und auf welcher Grundlage</h4>
+  <p><b>Konto und App-Funktionen</b> &mdash; Wertungen, Tippspiel, Ligen, Chat, Spiele, Profile &mdash; zur Vertragserf&uuml;llung, Art. 6 Abs. 1 lit. b DSGVO.</p>
+  <p><b>&Uuml;bersetzung von Inhalten</b> in deine gew&auml;hlte Sprache &mdash; als von dir genutzte Funktion bzw. im berechtigten Interesse an einer sprach&uuml;bergreifenden Community, Art. 6 Abs. 1 lit. b bzw. f DSGVO. Der zu &uuml;bersetzende Text wird dazu an den &Uuml;bersetzungsdienst &uuml;bermittelt (Abschnitt 5). &Uuml;bersetzungen werden zwischengespeichert, damit derselbe Text nicht mehrfach &uuml;bermittelt werden muss.</p>
+  <p><b>Sicherheit, Moderation und Missbrauchsvermeidung</b> &mdash; Meldungen, Sperren, Ratenbegrenzung, Erkennung manipulierter Spielergebnisse &mdash; berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO, sowie zur Erf&uuml;llung unserer Pflichten als Diensteanbieter.</p>
+  <p><b>Benachrichtigungen</b> &mdash; auf Grundlage deiner Einwilligung, Art. 6 Abs. 1 lit. a DSGVO, jederzeit in den Einstellungen widerrufbar.</p>
+  <p><b>Schlagzeilen:</b> F&uuml;r diesen Bereich rufen wir in regelm&auml;&szlig;igen Abst&auml;nden &ouml;ffentliche RSS-Feeds anderer Portale ab. Das geschieht auf unserem Server, unabh&auml;ngig davon, ob du die App gerade nutzt &mdash; deine IP-Adresse wird dabei nicht an die Portale &uuml;bermittelt. Erst wenn du eine Meldung antippst und die Seite des Portals &ouml;ffnet, entsteht eine direkte Verbindung dorthin; ab diesem Moment gilt die Datenschutzerkl&auml;rung des jeweiligen Portals.</p>
 
-    <h2>3. Welche Daten wir verarbeiten</h2>
-    <p><b>Kontodaten:</b> E-Mail-Adresse und Passwort (das Passwort wird verschlüsselt gespeichert und ist für uns nicht einsehbar), Anzeigename, Nutzername sowie optionale Profilangaben (Kurzbeschreibung, Profilbild, Lieblingsfahrer/-team, Benachrichtigungseinstellungen).</p>
-    <p><b>Von dir erstellte Inhalte:</b> Nachrichten im öffentlichen Chat, im Watch-Along und in Ligen/Räumen, private Nachrichten, Kommentare, Abstimmungen, Tipps, Umfrage-Stimmen, Quiz-Ergebnisse, Feedback, Meldungen sowie deine Folge-/Follower-Beziehungen.</p>
-    <p><b>Technische Daten:</b> Bei der Verbindung fallen technisch notwendige Daten an (z. B. IP-Adresse, Zeitstempel), die unser Hosting-Dienstleister verarbeitet. Einstellungen wie Sprache und Zeitzone speichern wir lokal auf deinem Gerät (siehe Abschnitt 9).</p>
-    <p><b>Push-Kennung:</b> Wenn du Benachrichtigungen aktivierst, wird eine gerätebezogene Push-Kennung (FCM-Token) erzeugt und gespeichert, damit wir dir Mitteilungen zustellen können. Deaktivierst du Benachrichtigungen wieder, wird die Kennung entfernt.</p>
+  <h4>4. Was andere Nutzerinnen und Nutzer sehen</h4>
+  <p>Sichtbar sind Anzeigename, Profilbild, optionale Profilangaben, deine &ouml;ffentlichen Beitr&auml;ge, deine Platzierungen in Ranglisten und deine Folge-Beziehungen. Nicht sichtbar sind deine E-Mail-Adresse, deine Push-Kennung, deine Einstellungen und der Inhalt privater Nachrichten. Bei Abstimmungen wird das Gesamtergebnis gezeigt, nicht, wer wie gestimmt hat.</p>
 
-    <h2>4. Zwecke und Rechtsgrundlagen</h2>
-    <p>Bereitstellung von Konto und App-Funktionen (Wertungen, Tippspiel, Chat, Ligen) – zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
-    <p>Übersetzung von Nutzerinhalten in deine gewählte Sprache – als von dir genutzte Funktion bzw. im berechtigten Interesse an einer sprachübergreifenden Community (Art. 6 Abs. 1 lit. b/f DSGVO). Dazu wird der zu übersetzende Text an unseren Übersetzungs-Dienstleister übermittelt (Abschnitt 5).</p>
-    <p>Sicherheit, Moderation und Missbrauchsvermeidung (Meldungen, Sperren, Spam-Schutz) – berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).</p>
-    <p>Optionale Benachrichtigungen – auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), jederzeit widerrufbar; die technische Auslieferung erfolgt über Firebase Cloud Messaging (Google, siehe Abschnitt 5).</p>
-    <p>Kostenpflichtige Leistungen (z. B. werbefreie Version) – zur Vertragserfüllung; die Abwicklung erfolgt über den jeweiligen App-Store.</p>
+  <h4>5. Empf&auml;nger und Dienstleister</h4>
+  <p>Eine Weitergabe an Dritte zu Werbe- oder Analysezwecken findet nicht statt. Eingebunden sind ausschlie&szlig;lich folgende Dienstleister:</p>
+  <p><b>Hosting, Konten und Datenbank &ndash; Supabase.</b> Anmeldung, Datenbank, Dateispeicher und Echtzeit-Funktionen laufen &uuml;ber Supabase; die Daten liegen auf Servern in der EU (Frankfurt). Es besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Der Anbieter hat seinen Sitz in den USA; die &Uuml;bermittlung st&uuml;tzt sich auf EU-Standardvertragsklauseln nach Art. 46 DSGVO nebst erg&auml;nzender Risikobewertung.</p>
+  <p><b>&Uuml;bersetzung &ndash; Microsoft Azure.</b> Zum &Uuml;bersetzen von Inhalten wird der jeweilige Text an den Microsoft-&Uuml;bersetzungsdienst &uuml;bermittelt und dort verarbeitet. &Uuml;bermittelt wird nur der Text selbst, kein Name und keine Kennung. [Region pr&uuml;fen: Bei einer EU-Region bleibt die Verarbeitung in der EU; andernfalls siehe Abschnitt 9.]</p>
+  <p><b>Anmeldung mit Google.</b> Meldest du dich mit deinem Google-Konto an, verarbeitet Google die zur Anmeldung n&ouml;tigen Daten &mdash; unter anderem E-Mail-Adresse, Name und Google-Konto-Kennung &mdash; und &uuml;bermittelt uns eine Anmelde-Best&auml;tigung zur Pr&uuml;fung deiner Identit&auml;t. Zus&auml;tzlich gelten die Datenschutzbestimmungen von Google.</p>
+  <p><b>Push-Benachrichtigungen &ndash; Firebase Cloud Messaging (Google).</b> Ist die Funktion aktiviert, wird die ger&auml;tebezogene Push-Kennung an Google &uuml;bermittelt, um Mitteilungen an dein Ger&auml;t auszuliefern. &Uuml;bermittelt werden dabei auch Titel und Text der jeweiligen Mitteilung.</p>
+  <p><b>App-Store.</b> Bezug und Aktualisierung der App laufen &uuml;ber Google Play; Google verarbeitet die dabei anfallenden Daten in eigener Verantwortung.</p>
+  <p>Dar&uuml;ber hinaus geben wir Daten nur weiter, wenn wir gesetzlich dazu verpflichtet sind, etwa auf Anordnung einer Beh&ouml;rde oder eines Gerichts.</p>
 
-    <h2>5. Empfänger und Dienstleister</h2>
-    <p><b>Hosting, Konten &amp; Datenbank – Supabase:</b> Anmeldung, Datenbank, Datei-/Avatar-Speicher und Echtzeit-Funktionen laufen über Supabase; die Daten werden auf Servern in der EU (Frankfurt) gehostet. Für die Verarbeitung besteht bzw. wird ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen. Anbieter ist ein Unternehmen mit Sitz in den USA; die Übermittlung stützt sich auf EU-Standardvertragsklauseln (Art. 46 DSGVO) nebst ergänzendem Transfer Impact Assessment.</p>
-    <p><b>Übersetzung – Microsoft Azure:</b> Zum Übersetzen von Nutzerinhalten (Chat, Kommentare) wird der jeweilige Text an den Microsoft-Übersetzungsdienst (Azure) übermittelt und dort verarbeitet. [Region prüfen: Bei einer EU-Region bleibt die Verarbeitung in der EU; andernfalls siehe Abschnitt 6.]</p>
-    <p><b>Anmeldung mit Google:</b> Wenn du dich mit deinem Google-Konto anmeldest, verarbeitet Google die zur Anmeldung nötigen Daten (u. a. deine E-Mail-Adresse, deinen Namen und deine Google-Konto-Kennung) und übermittelt uns eine Anmelde-Bestätigung (ID-Token) zur Prüfung deiner Identität. Zusätzlich gelten die Datenschutzbestimmungen von Google.</p>
-    <p><b>Push-Benachrichtigungen – Firebase Cloud Messaging (Google):</b> Zur Zustellung von Benachrichtigungen nutzen wir Firebase Cloud Messaging. Ist die Funktion aktiviert, wird die gerätebezogene Push-Kennung (FCM-Token) an Google übermittelt und dort verarbeitet, um Nachrichten an dein Gerät auszuliefern.</p>
-    <p><b>App-Stores:</b> Bei kostenpflichtigen Leistungen verarbeiten Apple bzw. Google die Zahlungsdaten in eigener Verantwortung.</p>
+  <h4>6. Automatisierte Entscheidungen</h4><p>Ratenbegrenzungen und Plausibilit&auml;tspr&uuml;fungen bei Spielergebnissen laufen automatisiert. Sie k&ouml;nnen dazu f&uuml;hren, dass eine Aktion vor&uuml;bergehend abgelehnt oder ein Spielergebnis nicht gewertet wird. Eine automatisierte Entscheidung mit rechtlicher Wirkung im Sinne von Art. 22 DSGVO ist damit nicht verbunden; Sperren von Konten entscheiden wir stets im Einzelfall.</p>
 
-    <h2>6. Übermittlung in Drittländer</h2>
-    <p>Soweit Daten außerhalb der EU/des EWR verarbeitet werden (z. B. je nach Region des Übersetzungsdienstes), erfolgt dies auf Grundlage geeigneter Garantien nach Art. 44 ff. DSGVO – insbesondere EU-Standardvertragsklauseln bzw. einer Zertifizierung des Anbieters. Auch Google (Anmeldung mit Google, Firebase Cloud Messaging) kann Daten in den USA verarbeiten; Google ist unter dem EU-US Data Privacy Framework zertifiziert und stützt Übermittlungen ergänzend auf EU-Standardvertragsklauseln. Für den Übersetzungsdienst empfehlen wir die Nutzung einer EU-Region, um Übermittlungen zu vermeiden.</p>
+  <h4>7. Speicherdauer und L&ouml;schung</h4>
+  <p>Wir speichern deine Daten, solange dein Konto besteht. In den Einstellungen kannst du dein Konto jederzeit selbst l&ouml;schen &mdash; wahlweise <b>sofort und unwiderruflich</b> oder <b>vorgemerkt mit 30 Tagen Frist</b>. Innerhalb dieser Frist kannst du die L&ouml;schung durch erneutes Anmelden abbrechen; danach werden Konto und zugeh&ouml;rige Daten endg&uuml;ltig entfernt.</p>
+  <p>Nachrichten im Watch-Along werden nach dem jeweiligen Rennen automatisch gel&ouml;scht. Schlagzeilen werden nach einiger Zeit &uuml;berschrieben. Kopien in Sicherungen werden im Rahmen &uuml;blicher Zyklen &uuml;berschrieben. Meldungen und Moderationsentscheidungen bewahren wir so lange auf, wie es zur Nachvollziehbarkeit erforderlich ist.</p>
 
-    <h2>7. Speicherdauer</h2>
-    <p>Wir speichern deine Daten, solange dein Konto besteht. Löschst du dein Konto oder einzelne Inhalte, werden diese entfernt; Kopien in Sicherungen werden im Rahmen üblicher Zyklen überschrieben. Für Zahlungsvorgänge können gesetzliche Aufbewahrungsfristen gelten.</p>
+  <h4>8. Speicherung auf deinem Ger&auml;t</h4><p>Wir setzen ausschlie&szlig;lich technisch notwendige Speicherung ein. Im lokalen Speicher deines Ger&auml;ts liegen: der Anmelde- bzw. Sitzungseintrag, damit du angemeldet bleibst; die gew&auml;hlte Sprache; eine Zwischenkopie deiner Profilangaben und Benachrichtigungseinstellungen, damit die App ohne Wartezeit startet; die Liste der von dir ge&ouml;ffneten Schlagzeilen; die Liste der gelesenen Posteingangs-Eintr&auml;ge, deren Schl&uuml;ssel je Konto getrennt ist, damit sich nach einem Kontowechsel keine Lesest&auml;nde vermischen; und die Best&auml;tigung, dass du den Datenschutzhinweis gesehen hast.</p><p>Diese Eintr&auml;ge werden nicht an uns &uuml;bertragen. Analyse- oder Werbe-Cookies setzen wir nicht ein. W&uuml;rden solche Funktionen k&uuml;nftig eingef&uuml;hrt, holen wir vorher deine Einwilligung ein. Beim sofortigen L&ouml;schen des Kontos werden alle lokalen Eintr&auml;ge der App mit entfernt.</p>
 
-    <h2>8. Deine Rechte</h2>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Anfragen an: [kontakt@deine-domain].</p>
+  <h4>9. &Uuml;bermittlung in Drittl&auml;nder</h4><p>Soweit Daten au&szlig;erhalb der EU beziehungsweise des EWR verarbeitet werden, geschieht das auf Grundlage geeigneter Garantien nach Art. 44 ff. DSGVO, insbesondere EU-Standardvertragsklauseln. Google kann Daten in den USA verarbeiten und ist unter dem EU-US Data Privacy Framework zertifiziert; erg&auml;nzend gelten Standardvertragsklauseln. F&uuml;r den &Uuml;bersetzungsdienst nutzen wir nach M&ouml;glichkeit eine EU-Region, um &Uuml;bermittlungen zu vermeiden.</p>
 
-    <h2>9. Cookies und lokaler Speicher</h2>
-    <p>Wir setzen ausschließlich technisch notwendige Speicherung ein: einen Anmelde-/Sitzungseintrag (damit du eingeloggt bleibst) sowie lokale Einstellungen (z. B. Sprache, Zeitzone). Diese liegen im lokalen Speicher deines Geräts. Wir verwenden derzeit keine Analyse- oder Werbe-Cookies und kein Tracking. Würden solche Funktionen künftig eingeführt, holen wir vorher deine Einwilligung ein.</p>
+  <h4>10. Deine Rechte</h4><p>Du hast das Recht auf Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung der Verarbeitung, Daten&uuml;bertragbarkeit und Widerspruch gegen Verarbeitungen, die auf einem berechtigten Interesse beruhen. Erteilte Einwilligungen kannst du jederzeit mit Wirkung f&uuml;r die Zukunft widerrufen. Au&szlig;erdem kannst du dich bei einer Datenschutz-Aufsichtsbeh&ouml;rde beschweren. Anfragen richte bitte an [kontakt@deine-domain]; wir antworten innerhalb der gesetzlichen Fristen.</p>
 
-    <h2>10. Sicherheit</h2>
-    <p>Die Übertragung erfolgt verschlüsselt (TLS). Der Zugriff auf Daten ist durch Regeln auf Datenbankebene beschränkt, sodass Nutzer grundsätzlich nur ihre eigenen bzw. für sie bestimmten Daten sehen.</p>
+  <h4>11. Sicherheit</h4><p>Die &Uuml;bertragung erfolgt verschl&uuml;sselt (TLS). Der Zugriff auf Daten ist durch Regeln auf Datenbankebene beschr&auml;nkt, sodass Nutzerinnen und Nutzer grunds&auml;tzlich nur ihre eigenen oder die f&uuml;r sie bestimmten Daten sehen. Spielergebnisse und Auswertungen werden serverseitig berechnet, damit sie nicht vom Ger&auml;t aus manipuliert werden k&ouml;nnen.</p>
 
-    <h2>11. Mindestalter</h2>
-    <p>Die App richtet sich an Personen ab [16] Jahren. Jüngere sollten die App nur mit Zustimmung der Erziehungsberechtigten nutzen.</p>
+  <h4>12. Mindestalter</h4><p>Die App richtet sich an Personen ab [16] Jahren. J&uuml;ngere sollten die App nur mit Zustimmung der Erziehungsberechtigten nutzen. Wir erheben bewusst keine Daten, die auf Kinder abzielen, und richten keine Werbung an sie.</p>
 
-    <h2>12. Änderungen</h2>
-    <p>Wir können diese Erklärung anpassen, wenn sich Funktionen oder rechtliche Vorgaben ändern. Die aktuelle Fassung ist stets unter dieser Adresse sowie in der App abrufbar.</p>
-  </section>
-
-  <!-- ================= ENGLISH (convenience) ================= -->
-  <section id="en">
-    <div class="note"><b>Please note:</b> This English text is an <b>unofficial translation for convenience only</b>. The legally binding version is the German one — in case of any discrepancy, the German version prevails.</div>
-
-    <p><b>Last updated:</b> [date]. This Privacy Policy describes how personal data is processed in the PARC FERMÉ app.</p>
-
-    <h2>1. Controller</h2>
-    <p>[Company name / operator], [street &amp; no.], [postal code, city], Germany. E-mail: [contact@your-domain]. [Data protection officer, if applicable].</p>
-
-    <h2>2. Principle</h2>
-    <p>We only process data necessary for sign-up, community features and operating the app. No advertising tracking takes place.</p>
-
-    <h2>3. Data we process</h2>
-    <p><b>Account data:</b> e-mail address and password (the password is stored encrypted and is not visible to us), display name, username and optional profile details (bio, profile picture, favourite driver/team, notification settings).</p>
-    <p><b>Content you create:</b> messages in the public chat, watch-along and in leagues/rooms, private messages, comments, votes, predictions, poll votes, quiz results, feedback, reports and your follow/follower relationships.</p>
-    <p><b>Technical data:</b> connecting to the service involves technically necessary data (e.g. IP address, timestamps) processed by our hosting provider. Settings such as language and time zone are stored locally on your device (see section 9).</p>
-    <p><b>Push identifier:</b> if you enable notifications, a device-specific push identifier (FCM token) is generated and stored so we can deliver messages to you. If you disable notifications, the identifier is removed.</p>
-
-    <h2>4. Purposes and legal bases</h2>
-    <p>Providing your account and app features (standings, prediction game, chat, leagues) — to perform the contract (Art. 6(1)(b) GDPR).</p>
-    <p>Translating user content into your chosen language — as a feature you use or in our legitimate interest in a cross-language community (Art. 6(1)(b)/(f) GDPR). For this, the text to be translated is transmitted to our translation provider (section 5).</p>
-    <p>Security, moderation and abuse prevention (reports, blocks, spam protection) — legitimate interest (Art. 6(1)(f) GDPR).</p>
-    <p>Optional notifications — based on your consent (Art. 6(1)(a) GDPR), revocable at any time; technical delivery is handled via Firebase Cloud Messaging (Google, see section 5).</p>
-    <p>Paid services (e.g. ad-free version) — to perform the contract; processed via the respective app store.</p>
-
-    <h2>5. Recipients and processors</h2>
-    <p><b>Hosting, accounts &amp; database – Supabase:</b> sign-in, database, file/avatar storage and realtime features run via Supabase; data is hosted on servers in the EU (Frankfurt). A data processing agreement under Art. 28 GDPR is in place or being concluded. The provider is a US-based company; transfers rely on EU standard contractual clauses (Art. 46 GDPR) together with a supplementary transfer impact assessment.</p>
-    <p><b>Translation – Microsoft Azure:</b> to translate user content (chat, comments), the relevant text is transmitted to and processed by the Microsoft translation service (Azure). [Check region: with an EU region, processing stays in the EU; otherwise see section 6.]</p>
-    <p><b>Sign in with Google:</b> if you sign in with your Google account, Google processes the data required for authentication (including your e-mail address, name and Google account identifier) and provides us with a sign-in confirmation (ID token) to verify your identity. Google's privacy terms apply in addition.</p>
-    <p><b>Push notifications – Firebase Cloud Messaging (Google):</b> we use Firebase Cloud Messaging to deliver notifications. When the feature is enabled, the device-specific push identifier (FCM token) is transmitted to and processed by Google in order to deliver messages to your device.</p>
-    <p><b>App stores:</b> for paid services, Apple or Google process payment data under their own responsibility.</p>
-
-    <h2>6. Transfers to third countries</h2>
-    <p>Where data is processed outside the EU/EEA (e.g. depending on the translation service's region), this is based on appropriate safeguards under Art. 44 et seq. GDPR — in particular EU standard contractual clauses or a certification of the provider. Google (Sign in with Google, Firebase Cloud Messaging) may also process data in the USA; Google is certified under the EU-US Data Privacy Framework and additionally relies on EU standard contractual clauses. For the translation service we recommend using an EU region to avoid transfers.</p>
-
-    <h2>7. Retention</h2>
-    <p>We store your data as long as your account exists. If you delete your account or individual content, it is removed; copies in backups are overwritten within ordinary cycles. Statutory retention periods may apply to payment transactions.</p>
-
-    <h2>8. Your rights</h2>
-    <p>You have the right to access, rectification, erasure, restriction of processing, data portability and objection. You may withdraw consent at any time with effect for the future. You may also lodge a complaint with a data protection supervisory authority. Requests to: [contact@your-domain].</p>
-
-    <h2>9. Cookies and local storage</h2>
-    <p>We use exclusively technically necessary storage: a sign-in/session entry (to keep you logged in) and local settings (e.g. language, time zone). These reside in your device's local storage. We currently use no analytics or advertising cookies and no tracking. Should such features be introduced in the future, we will obtain your consent beforehand.</p>
-
-    <h2>10. Security</h2>
-    <p>Transmission is encrypted (TLS). Access to data is restricted by database-level rules so that users generally only see their own data or data intended for them.</p>
-
-    <h2>11. Minimum age</h2>
-    <p>The app is intended for persons aged [16] and over. Younger persons should only use the app with the consent of their legal guardians.</p>
-
-    <h2>12. Changes</h2>
-    <p>We may update this policy when features or legal requirements change. The current version is always available at this address and in the app.</p>
-  </section>
-
-  <footer>
-    PARC FERMÉ · Inoffizielle Fan-App · nicht mit der FIA oder Formula 1 verbunden.
-  </footer>
+  <h4>13. &Auml;nderungen</h4><p>Wir k&ouml;nnen diese Erkl&auml;rung anpassen, wenn sich Funktionen oder rechtliche Vorgaben &auml;ndern. Die jeweils aktuelle Fassung ist in der App und auf unserer Webseite abrufbar.</p>
+<footer>
+  Stand: [TT.MM.JJJJ] · Aus den Rechtstexten der App erzeugt — diese Datei nicht von Hand bearbeiten.
+</footer>
 </div>
-
-<script>
-  function setLang(l){
-    document.getElementById('de').classList.toggle('on', l==='de');
-    document.getElementById('en').classList.toggle('on', l==='en');
-    document.getElementById('btn-de').classList.toggle('on', l==='de');
-    document.getElementById('btn-en').classList.toggle('on', l==='en');
-    document.documentElement.lang = l;
-  }
-</script>
 </body>
 </html>
