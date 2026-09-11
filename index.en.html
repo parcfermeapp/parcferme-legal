@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARC FERMÉ — The app for Formula 1 fans</title>
+<meta name="description" content="PARC FERMÉ is an unofficial motorsport fan app: race and session times, a prediction game, fan votes on contentious incidents, quizzes and watch-along with other fans.">
+
+<meta name="google-site-verification" content="lZH6PUW6AQAasd26Brt8rsjPRaugyj2nodO8cAbJq9o" />
+
+<link rel="canonical" href="https://parcfermeapp.github.io/parcferme-legal/index.en.html">
+<!-- Points to the other language version. Search engines then recognise this
+     as the same page in two languages rather than duplicate content.
+     x-default points to the German version, as DACH is the launch market. -->
+<link rel="alternate" hreflang="de" href="https://parcfermeapp.github.io/parcferme-legal/">
+<link rel="alternate" hreflang="en" href="https://parcfermeapp.github.io/parcferme-legal/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://parcfermeapp.github.io/parcferme-legal/">
+<style>
+:root{
+  --bg:#0A0C10; --txt:#ECEFF4; --accent:#FF2E43;
+  --panel:rgba(255,255,255,.05); --line:rgba(255,255,255,.11);
+  --muted:rgba(236,239,244,.62);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(900px 500px at 50% -10%, rgba(255,46,67,.13), transparent 70%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px)}
+.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 22px 72px}
+
+/* Language switch. In the normal flow rather than fixed, so it does not
+   cover anything on narrow screens. */
+.lang{display:flex;justify-content:flex-end;gap:6px;padding:18px 0 0;font-size:13px}
+.lang a,.lang span{padding:4px 10px;border-radius:99px;border:1px solid var(--line);
+  text-decoration:none;color:var(--muted);letter-spacing:.04em}
+.lang a:hover{border-color:var(--accent);color:var(--accent)}
+.lang .on{background:var(--panel);color:var(--txt);border-color:var(--line)}
+
+header{padding:42px 0 40px;text-align:center}
+.mono{width:74px;height:74px;margin:0 auto 22px;border-radius:20px;background:#0C0E12;
+  border:1px solid var(--line);display:grid;place-items:center;
+  font-weight:800;font-size:26px;letter-spacing:1px;color:var(--accent);
+  box-shadow:0 0 44px rgba(255,46,67,.2)}
+h1{margin:0;font-size:clamp(30px,7vw,46px);letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.tag{margin:14px 0 0;color:var(--muted);font-size:17px}
+.badge{display:inline-block;margin-top:20px;padding:5px 14px;border:1px solid var(--line);
+  border-radius:99px;font-size:12.5px;color:var(--muted);letter-spacing:.05em}
+h2{margin:44px 0 14px;font-size:14px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+p{margin:0 0 15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.card h3{margin:0 0 6px;font-size:16.5px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.note{border-left:3px solid var(--accent);padding:14px 18px;background:var(--panel);
+  border-radius:0 12px 12px 0;color:var(--muted);font-size:14.5px}
+footer{margin-top:52px;padding-top:26px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:14px;text-align:center}
+/* flex-wrap, because six links do not fit on one line on a phone.
+   Without it the row would run past the edge. */
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0}
+footer a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line);
+  padding-bottom:2px;margin:0 10px;display:inline-block}
+footer a:hover{border-color:var(--accent);color:var(--accent)}
+.small{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.55}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="lang" aria-label="Language">
+    <a href="index.html" hreflang="de">DE</a>
+    <span class="on">EN</span>
+  </nav>
+
+  <header>
+    <div class="mono">PF</div>
+    <!-- This name MUST match the name in the OAuth consent screen exactly. -->
+    <h1>PARC FERMÉ</h1>
+    <p class="tag">The app for Formula 1 fans — schedule, prediction game and fan verdicts for every race weekend.</p>
+    <span class="badge">Unofficial fan app · for Android</span>
+  </header>
+
+  <h2>What this app is for</h2>
+  <p>PARC FERMÉ takes you through the race weekend. The app shows every session of a
+     Grand Prix with start times and the weather, lets you predict the race result and
+     puts the contentious incidents of a race to a vote: you help decide whether the
+     stewards got it right. There are also quizzes, polls and a shared chat during the
+     race.</p>
+
+  <h2>Features</h2>
+
+  <div class="card"><h3>Race calendar &amp; sessions</h3>
+    <p>Every session of a weekend — free practice, qualifying, sprint and race —
+       with the start time in your time zone and a weather forecast.</p></div>
+
+  <div class="card"><h3>Prediction game</h3>
+    <p>Predict the outcome before the race starts and collect points. A leaderboard
+       shows who is doing best across the season.</p></div>
+
+  <div class="card"><h3>Fan verdicts on contentious incidents</h3>
+    <p>Disputed situations are collected for every race. You vote on whether there
+       should have been a penalty and see how the community decided — alongside the
+       official ruling.</p></div>
+
+  <div class="card"><h3>Watch-along &amp; community</h3>
+    <p>A shared chat during the race, plus quizzes and polls between race
+       weekends.</p></div>
+
+  <h2>Signing in</h2>
+  <p>You need an account for the prediction game, votes and chat. You can sign in with
+     your Google account — only your e-mail address and your name are taken over in order
+     to create your profile. No other data from your Google account is accessed.</p>
+  <p>You can delete your account at any time in the app under &ldquo;Profile&rdquo;.</p>
+
+  <div class="note">
+    <strong>Please note:</strong> PARC FERMÉ is a private fan project and has no
+    affiliation with the Formula One Group, the FIA or any team. All brand and team
+    names belong to their respective owners.
+  </div>
+
+  <footer>
+    <!-- English versions of the five legal texts, generated by
+         tools/legal-export.js into the same directory (.en.html suffix).
+         Keep in sync with the German footer in index.html. -->
+    <div class="links">
+      <a href="imprint.en.html">Legal Notice</a>
+      <a href="privacy.en.html">Privacy Policy</a>
+      <a href="terms-of-sale.en.html">Terms (AGB)</a>
+      <a href="terms.en.html">Terms of Use</a>
+      <a href="storage.en.html">Storage on your device</a>
+      <a href="mailto:parcferme.app@gmail.com">Contact</a>
+    </div>
+    <p class="small">© 2026 PARC FERMÉ — a private project from Germany.<br>
+      Unofficial fan app. Not an official Formula 1 application.</p>
+  </footer>
+
+</div>
+</body>
+</html>

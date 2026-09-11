@@ -9,6 +9,13 @@
 <meta name="google-site-verification" content="lZH6PUW6AQAasd26Brt8rsjPRaugyj2nodO8cAbJq9o" />
 
 <link rel="canonical" href="https://parcfermeapp.github.io/parcferme-legal/">
+<!-- Verweist auf die jeweils andere Sprachfassung. Suchmaschinen erkennen
+     dadurch, dass es dieselbe Seite in zwei Sprachen ist, statt sie als
+     doppelten Inhalt zu werten. x-default zeigt auf die deutsche Fassung,
+     weil der DACH-Raum der Startmarkt ist. -->
+<link rel="alternate" hreflang="de" href="https://parcfermeapp.github.io/parcferme-legal/">
+<link rel="alternate" hreflang="en" href="https://parcfermeapp.github.io/parcferme-legal/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://parcfermeapp.github.io/parcferme-legal/">
 <style>
 :root{
   --bg:#0A0C10; --txt:#ECEFF4; --accent:#FF2E43;
@@ -25,7 +32,16 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
     repeating-linear-gradient(45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px),
     repeating-linear-gradient(-45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px)}
 .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 22px 72px}
-header{padding:64px 0 40px;text-align:center}
+
+/* Sprachumschalter. Sitzt im Textfluss und nicht fixiert, damit er auf
+   schmalen Geraeten nichts ueberdeckt. */
+.lang{display:flex;justify-content:flex-end;gap:6px;padding:18px 0 0;font-size:13px}
+.lang a,.lang span{padding:4px 10px;border-radius:99px;border:1px solid var(--line);
+  text-decoration:none;color:var(--muted);letter-spacing:.04em}
+.lang a:hover{border-color:var(--accent);color:var(--accent)}
+.lang .on{background:var(--panel);color:var(--txt);border-color:var(--line)}
+
+header{padding:42px 0 40px;text-align:center}
 .mono{width:74px;height:74px;margin:0 auto 22px;border-radius:20px;background:#0C0E12;
   border:1px solid var(--line);display:grid;place-items:center;
   font-weight:800;font-size:26px;letter-spacing:1px;color:var(--accent);
@@ -43,6 +59,9 @@ p{margin:0 0 15px}
   border-radius:0 12px 12px 0;color:var(--muted);font-size:14.5px}
 footer{margin-top:52px;padding-top:26px;border-top:1px solid var(--line);
   color:var(--muted);font-size:14px;text-align:center}
+/* flex-wrap, weil fuenf Links auf einem Telefon nicht in eine Zeile passen.
+   Ohne das liefe die Zeile ueber den Rand hinaus. */
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0}
 footer a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line);
   padding-bottom:2px;margin:0 10px;display:inline-block}
 footer a:hover{border-color:var(--accent);color:var(--accent)}
@@ -51,6 +70,11 @@ footer a:hover{border-color:var(--accent);color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
+
+  <nav class="lang" aria-label="Sprache">
+    <span class="on">DE</span>
+    <a href="index.en.html" hreflang="en">EN</a>
+  </nav>
 
   <header>
     <div class="mono">PF</div>
@@ -69,7 +93,7 @@ footer a:hover{border-color:var(--accent);color:var(--accent)}
 
   <h2>Funktionen</h2>
 
-  <div class="card"><h3>Rennkalender & Sessions</h3>
+  <div class="card"><h3>Rennkalender &amp; Sessions</h3>
     <p>Alle Sessions eines Wochenendes — Freies Training, Qualifying, Sprint und Rennen —
        mit Startzeit in deiner Zeitzone und Wettervorhersage.</p></div>
 
@@ -82,7 +106,7 @@ footer a:hover{border-color:var(--accent);color:var(--accent)}
        eine Strafe hätte geben müssen, und siehst, wie die Community entschieden hat —
        im Vergleich zum offiziellen Urteil.</p></div>
 
-  <div class="card"><h3>Watch-Along & Community</h3>
+  <div class="card"><h3>Watch-Along &amp; Community</h3>
     <p>Während des Rennens ein gemeinsamer Chat, dazu Quizze und Umfragen zwischen
        den Rennwochenenden.</p></div>
 
@@ -91,7 +115,7 @@ footer a:hover{border-color:var(--accent);color:var(--accent)}
      Google-Konto anmelden — dabei werden ausschließlich deine E-Mail-Adresse und dein Name
      übernommen, um dein Profil anzulegen. Ein Zugriff auf weitere Daten deines
      Google-Kontos findet nicht statt.</p>
-  <p>Dein Konto kannst du jederzeit in der App unter „Profil" wieder löschen.</p>
+  <p>Dein Konto kannst du jederzeit in der App unter „Profil“ wieder löschen.</p>
 
   <div class="note">
     <strong>Hinweis:</strong> PARC FERMÉ ist ein privates Fan-Projekt und steht in keiner
@@ -100,10 +124,21 @@ footer a:hover{border-color:var(--accent);color:var(--accent)}
   </div>
 
   <footer>
-    <!-- Die Datenschutzerklaerung liegt im selben Repo. Impressum ergaenzen,
-         sobald die ladungsfaehige Adresse steht. -->
-    <a href="privacy.html">Datenschutzerklärung</a>
-    <a href="mailto:parcferme.app@gmail.com">Kontakt</a>
+    <!-- Alle fuenf Rechtstexte werden von tools/legal-export.js erzeugt und
+         liegen im selben Verzeichnis. Sie waren bisher vorhanden, aber von
+         nirgends verlinkt — insbesondere das Impressum, das fuer eine Seite
+         eines deutschen Anbieters leicht erreichbar sein muss.
+         Dateinamen: impressum -> imprint, AGB -> terms-of-sale,
+         Nutzungsbedingungen -> terms, Datenschutz -> privacy,
+         Speicherung -> storage. -->
+    <div class="links">
+      <a href="imprint.html">Impressum</a>
+      <a href="privacy.html">Datenschutzerklärung</a>
+      <a href="terms-of-sale.html">AGB</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="storage.html">Speicherung auf dem Gerät</a>
+      <a href="mailto:parcferme.app@gmail.com">Kontakt</a>
+    </div>
     <p class="small">© 2026 PARC FERMÉ — ein privates Projekt aus Deutschland.<br>
       Inoffizielle Fan-App. Keine offizielle Formel-1-Anwendung.</p>
   </footer>
