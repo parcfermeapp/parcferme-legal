@@ -6,6 +6,10 @@
 <title>Konto löschen — PARC FERMÉ</title>
 <meta name="description" content="So löschst du dein PARC-FERMÉ-Konto und welche Daten dabei entfernt werden.">
 <link rel="canonical" href="https://parcfermeapp.github.io/parcferme-legal/delete-account.html">
+<link rel="alternate" hreflang="de" href="https://parcfermeapp.github.io/parcferme-legal/delete-account.html">
+<link rel="alternate" hreflang="en" href="https://parcfermeapp.github.io/parcferme-legal/delete-account.en.html">
+<link rel="alternate" hreflang="fr" href="https://parcfermeapp.github.io/parcferme-legal/delete-account.fr.html">
+<link rel="alternate" hreflang="x-default" href="https://parcfermeapp.github.io/parcferme-legal/delete-account.html">
 <style>
 :root{
   --bg:#0A0C10; --txt:#ECEFF4; --accent:#FF2E43;
@@ -21,7 +25,12 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
     repeating-linear-gradient(45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px),
     repeating-linear-gradient(-45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px)}
 .wrap{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:0 22px 72px}
-header{padding:56px 0 30px}
+.lang{display:flex;justify-content:flex-end;gap:6px;padding:18px 0 0;font-size:13px}
+.lang a,.lang span{padding:4px 10px;border-radius:99px;border:1px solid var(--line);
+  text-decoration:none;color:var(--muted);letter-spacing:.04em}
+.lang a:hover{border-color:var(--accent);color:var(--accent)}
+.lang .on{background:var(--panel);color:var(--txt);border-color:var(--line)}
+header{padding:38px 0 30px}
 .mono{width:56px;height:56px;border-radius:16px;background:#0C0E12;border:1px solid var(--line);
   display:grid;place-items:center;font-weight:800;font-size:19px;color:var(--accent);margin-bottom:20px}
 h1{margin:0;font-size:clamp(25px,5.5vw,34px);letter-spacing:.05em;font-weight:800}
@@ -48,6 +57,12 @@ footer a{margin:0 10px;text-decoration:none;border-bottom:1px solid var(--line);
 </head>
 <body>
 <div class="wrap">
+
+  <nav class="lang" aria-label="Sprache">
+    <span class="on">DE</span>
+    <a href="delete-account.en.html" hreflang="en">EN</a>
+    <a href="delete-account.fr.html" hreflang="fr">FR</a>
+  </nav>
 
   <header>
     <div class="mono">PF</div>
@@ -85,7 +100,7 @@ footer a{margin:0 10px;text-decoration:none;border-bottom:1px solid var(--line);
   <ul>
     <li>dein Benutzerkonto samt E-Mail-Adresse und Anzeigename</li>
     <li>dein Profilbild</li>
-    <li>deine Tipps, Abstimmungen und Quiz-Ergebnisse</li>
+    <li>deine Tipps, Abstimmungen, Quiz- und Rennwort-Ergebnisse</li>
     <li>deine Punktestände und Ranglisten-Einträge</li>
     <li>deine Postfach-Nachrichten und dein eingesendetes Feedback</li>
     <li>die Push-Kennung deines Geräts (Benachrichtigungen enden damit)</li>
