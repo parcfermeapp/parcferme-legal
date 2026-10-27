@@ -2,45 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0A0C10">
 <title>Cookies & Local Storage — PARC FERMÉ</title>
-<style>
-:root{
-  --bg:#0b0d12; --card:#12151c; --fg:#e8eaf0; --muted:#9aa3b2;
-  --red:#e8202a; --amber:#ffc400; --line:rgba(255,255,255,.09);
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);
-  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  padding:0 18px 80px}
-.wrap{max-width:760px;margin:0 auto}
-header{padding:34px 0 22px;border-bottom:1px solid var(--line);margin-bottom:26px}
-.brand{font-weight:800;letter-spacing:.16em;font-size:13px;color:var(--red);
-  text-transform:uppercase;margin-bottom:10px}
-h1{font-size:30px;line-height:1.2;margin:0}
-h4{margin:26px 0 6px;font-size:16px;color:var(--fg)}
-p{margin:0 0 11px;color:#cfd4de}
-a{color:var(--red)}
-b{color:var(--fg)}
-nav{margin:22px 0 0;font-size:14px}
-nav a{margin-right:16px;display:inline-block;color:var(--muted);text-decoration:none;
-  border-bottom:1px solid transparent;padding-bottom:2px}
-nav a:hover,nav a[aria-current]{color:var(--fg);border-bottom-color:var(--red)}
-.draft{border:1px solid var(--amber);border-radius:8px;padding:11px 13px;
-  margin:0 0 22px;background:rgba(255,196,0,.07);color:var(--amber);font-size:14px}
-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:13px}
-</style>
+<link rel="canonical" href="https://parcfermeapp.github.io/parcferme-legal/storage.en.html">
+<link rel="alternate" hreflang="de" href="https://parcfermeapp.github.io/parcferme-legal/storage.html">
+<link rel="alternate" hreflang="en" href="https://parcfermeapp.github.io/parcferme-legal/storage.en.html">
+<link rel="alternate" hreflang="fr" href="https://parcfermeapp.github.io/parcferme-legal/storage.fr.html">
+<link rel="alternate" hreflang="x-default" href="https://parcfermeapp.github.io/parcferme-legal/storage.html">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-<header>
-  <div class="brand">Parc Fermé</div>
-  <h1>Cookies & Local Storage</h1>
-  <nav><a href="imprint.en.html">Legal Notice</a><a href="terms-of-sale.en.html">General Terms</a><a href="terms.en.html">Terms of Use</a><a href="privacy.en.html">Privacy</a><a href="storage.en.html" aria-current="page">Storage</a><span style="float:right"><a href="storage.html" hreflang="de" lang="de">Deutsch</a><a href="storage.fr.html" hreflang="fr" lang="fr">Français</a></span></nav>
-</header>
-
+<header class="top"><div class="in">
+  <a class="logo" href="index.en.html">PARC <span>FERMÉ.</span></a>
+  <nav class="langs" aria-label="Language"><a href="storage.html" hreflang="de" lang="de">DE</a><span>EN</span><a href="storage.fr.html" hreflang="fr" lang="fr">FR</a></nav>
+</div></header>
+<main class="wrap">
+<div class="head"><span class="eyebrow">Legal</span><h1>Cookies & Local Storage</h1>
+<p class="stand">Last updated: 27.10.2026</p></div>
+<nav class="tabs"><a href="imprint.en.html">Legal Notice</a><a href="terms-of-sale.en.html">General Terms</a><a href="terms.en.html">Terms of Use</a><a href="privacy.en.html">Privacy</a><a href="storage.en.html" aria-current="page">Storage</a></nav>
+<article class="doc">
 <div style="border:1px solid var(--amber);border-radius:8px;padding:9px 11px;margin-bottom:13px;background:rgba(255,196,0,.06)"><b>Please note:</b> This English text is an <b>unofficial translation for convenience only</b>. The legally binding version is the German one — in case of any discrepancy, the German version prevails. This does not limit any mandatory consumer protection provisions of your country of residence or your rights under the GDPR.</div>
   <p>PARC FERM&Eacute; uses exclusively <b>technically necessary</b> storage. There is nothing to configure, as we use no tracking, no analytics and no advertising cookies.</p>
   <h4>Necessary (always active)</h4>
@@ -50,12 +33,15 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);
   <p><b>Profile cache:</b> keeps your display name, favourite driver and team and your notification settings at hand so the app starts without delay. The same details are also held in your account because they are meant to apply on all your devices.</p>
   <p><b>Legal texts:</b> keeps a copy of these texts so they remain readable without a connection. The entry expires by itself after three days so no outdated version is shown.</p>
   <p><b>Start screen:</b> remembers the name, circuit and lap count of the next race so the start screen can show them immediately instead of waiting for the server. The entry expires by itself once the race is over.</p>
-  <p><b>Read state:</b> remembers which headlines and inbox entries you have already opened. The inbox entry is keyed per account so that read states do not mix after switching accounts.</p>
+  <p><b>Read state:</b> remembers which headlines you have already opened or seen in the story view and which inbox entries you have opened. The inbox entry is keyed per account so that read states do not mix after switching accounts.</p>
   <p><b>Notice acknowledgement:</b> remembers that you have seen the privacy notice.</p>
   <p>These entries reside solely on your device and are not transmitted to us. No analytics and no advertising evaluation take place. If you delete your account immediately, they are removed with it. Details in the <a href="privacy.en.html">Privacy Policy</a>.</p>
+</article>
+<script>/* aktiven Reiter in den Sichtbereich holen */var t=document.querySelector('.tabs [aria-current]');if(t)t.parentNode.scrollLeft=t.offsetLeft-16;</script>
 <footer>
-  Last updated: 07.10.2026 · Generated from the app’s legal texts — do not edit this file by hand.
+  <nav class="flinks"><a href="index.en.html">Home</a><a href="imprint.en.html">Legal Notice</a><a href="terms-of-sale.en.html">General Terms</a><a href="terms.en.html">Terms of Use</a><a href="privacy.en.html">Privacy</a><a href="storage.en.html" aria-current="page">Storage</a><a href="delete-account.en.html">Delete account</a><a href="mailto:parcferme.app@gmail.com">Contact</a></nav>
+  <p class="copy">© 2026 PARC FERMÉ — a private project from Germany. Unofficial fan app, not an official Formula 1 application.</p>
 </footer>
-</div>
+</main>
 </body>
 </html>

@@ -1,150 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PARC FERMÉ — Die App für Formel-1-Fans</title>
-<meta name="description" content="PARC FERMÉ ist eine inoffizielle Fan-App rund um den Motorsport: Renn- und Sessionzeiten, Tippspiel, Fan-Abstimmungen über strittige Szenen, Quizze und Watch-Along mit anderen Fans.">
-
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0A0C10">
 <meta name="google-site-verification" content="lZH6PUW6AQAasd26Brt8rsjPRaugyj2nodO8cAbJq9o" />
-
+<title>PARC FERMÉ — Die App für Formel-1-Fans</title>
+<meta name="description" content="PARC FERMÉ ist eine inoffizielle Fan-App rund um die Formel 1: Rennwochenende mit Zeitplan, Fan-Urteil zu strittigen Szenen, Tippspiel, Rennbingo, Fan-Power, Statistiken und tägliches Rennwort.">
 <link rel="canonical" href="https://parcfermeapp.github.io/parcferme-legal/">
-<!-- Verweist auf die jeweils andere Sprachfassung. Suchmaschinen erkennen
-     dadurch, dass es dieselbe Seite in zwei Sprachen ist, statt sie als
-     doppelten Inhalt zu werten. x-default zeigt auf die deutsche Fassung,
-     weil der DACH-Raum der Startmarkt ist. -->
 <link rel="alternate" hreflang="de" href="https://parcfermeapp.github.io/parcferme-legal/">
 <link rel="alternate" hreflang="en" href="https://parcfermeapp.github.io/parcferme-legal/index.en.html">
 <link rel="alternate" hreflang="fr" href="https://parcfermeapp.github.io/parcferme-legal/index.fr.html">
 <link rel="alternate" hreflang="x-default" href="https://parcfermeapp.github.io/parcferme-legal/">
-<style>
-:root{
-  --bg:#0A0C10; --txt:#ECEFF4; --accent:#FF2E43;
-  --panel:rgba(255,255,255,.05); --line:rgba(255,255,255,.11);
-  --muted:rgba(236,239,244,.62);
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--txt);
-  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:
-    radial-gradient(900px 500px at 50% -10%, rgba(255,46,67,.13), transparent 70%),
-    repeating-linear-gradient(45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px),
-    repeating-linear-gradient(-45deg, rgba(255,255,255,.022) 0 2px, transparent 2px 5px)}
-.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 22px 72px}
-
-/* Sprachumschalter. Sitzt im Textfluss und nicht fixiert, damit er auf
-   schmalen Geraeten nichts ueberdeckt. */
-.lang{display:flex;justify-content:flex-end;gap:6px;padding:18px 0 0;font-size:13px}
-.lang a,.lang span{padding:4px 10px;border-radius:99px;border:1px solid var(--line);
-  text-decoration:none;color:var(--muted);letter-spacing:.04em}
-.lang a:hover{border-color:var(--accent);color:var(--accent)}
-.lang .on{background:var(--panel);color:var(--txt);border-color:var(--line)}
-
-header{padding:42px 0 40px;text-align:center}
-.mono{width:74px;height:74px;margin:0 auto 22px;border-radius:20px;background:#0C0E12;
-  border:1px solid var(--line);display:grid;place-items:center;
-  font-weight:800;font-size:26px;letter-spacing:1px;color:var(--accent);
-  box-shadow:0 0 44px rgba(255,46,67,.2)}
-h1{margin:0;font-size:clamp(30px,7vw,46px);letter-spacing:.16em;text-transform:uppercase;font-weight:800}
-.tag{margin:14px 0 0;color:var(--muted);font-size:17px}
-.badge{display:inline-block;margin-top:20px;padding:5px 14px;border:1px solid var(--line);
-  border-radius:99px;font-size:12.5px;color:var(--muted);letter-spacing:.05em}
-h2{margin:44px 0 14px;font-size:14px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
-p{margin:0 0 15px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
-.card h3{margin:0 0 6px;font-size:16.5px}
-.card p{margin:0;color:var(--muted);font-size:15px}
-.note{border-left:3px solid var(--accent);padding:14px 18px;background:var(--panel);
-  border-radius:0 12px 12px 0;color:var(--muted);font-size:14.5px}
-footer{margin-top:52px;padding-top:26px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:14px;text-align:center}
-/* flex-wrap, weil fuenf Links auf einem Telefon nicht in eine Zeile passen.
-   Ohne das liefe die Zeile ueber den Rand hinaus. */
-.links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0}
-footer a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line);
-  padding-bottom:2px;margin:0 10px;display:inline-block}
-footer a:hover{border-color:var(--accent);color:var(--accent)}
-.small{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.55}
-</style>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-
-  <nav class="lang" aria-label="Sprache">
-    <span class="on">DE</span>
-    <a href="index.en.html" hreflang="en">EN</a>
-    <a href="index.fr.html" hreflang="fr">FR</a>
-  </nav>
-
-  <header>
-    <div class="mono">PF</div>
-    <!-- Dieser Name MUSS exakt dem Namen im OAuth-Zustimmungsbildschirm entsprechen. -->
-    <h1>PARC FERMÉ</h1>
-    <p class="tag">Die App für Formel-1-Fans — Zeitplan, Tippspiel und Fan-Urteile zu jedem Rennwochenende.</p>
-    <span class="badge">Inoffizielle Fan-App · für Android</span>
-  </header>
-
-  <h2>Wozu diese App dient</h2>
-  <p>PARC FERMÉ begleitet dich durch das Rennwochenende. Die App zeigt dir alle Sessions
-     eines Grand Prix mit Startzeiten und Wetterlage, lässt dich das Rennergebnis tippen und
-     stellt die strittigen Szenen eines Rennens zur Abstimmung: Du entscheidest mit, ob die
-     Rennleitung richtig lag. Dazu kommen Quizze, Umfragen und ein gemeinsamer Chat während
-     des Rennens.</p>
-
-  <h2>Funktionen</h2>
-
-  <div class="card"><h3>Rennkalender &amp; Sessions</h3>
-    <p>Alle Sessions eines Wochenendes — Freies Training, Qualifying, Sprint und Rennen —
-       mit Startzeit in deiner Zeitzone und Wettervorhersage.</p></div>
-
-  <div class="card"><h3>Tippspiel</h3>
-    <p>Tippe vor Rennstart auf den Ausgang und sammle Punkte. Eine Rangliste zeigt,
-       wer über die Saison am besten liegt.</p></div>
-
-  <div class="card"><h3>Fan-Urteil zu strittigen Szenen</h3>
-    <p>Zu jedem Rennen werden umstrittene Situationen gesammelt. Du stimmst ab, ob es
-       eine Strafe hätte geben müssen, und siehst, wie die Community entschieden hat —
-       im Vergleich zum offiziellen Urteil.</p></div>
-
-  <div class="card"><h3>Watch-Along &amp; Community</h3>
-    <p>Während des Rennens ein gemeinsamer Chat, dazu Quizze und Umfragen zwischen
-       den Rennwochenenden.</p></div>
-
-  <h2>Anmeldung</h2>
-  <p>Für Tippspiel, Abstimmungen und Chat brauchst du ein Konto. Du kannst dich mit deinem
-     Google-Konto anmelden — dabei werden ausschließlich deine E-Mail-Adresse und dein Name
-     übernommen, um dein Profil anzulegen. Ein Zugriff auf weitere Daten deines
-     Google-Kontos findet nicht statt.</p>
-  <p>Dein Konto kannst du jederzeit in der App unter „Profil“ wieder löschen.</p>
-
-  <div class="note">
-    <strong>Hinweis:</strong> PARC FERMÉ ist ein privates Fan-Projekt und steht in keiner
-    Verbindung zur Formula One Group, der FIA oder einem Rennstall. Alle Marken- und
-    Teamnamen gehören ihren jeweiligen Inhabern.
+<header class="top"><div class="in">
+  <a class="logo" href="./">PARC <span>FERMÉ.</span></a>
+  <nav class="langs" aria-label="Language"><span>DE</span><a href="index.en.html" hreflang="en" lang="en">EN</a><a href="index.fr.html" hreflang="fr" lang="fr">FR</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+  <span class="eyebrow">Inoffizielle Fan-App · Android</span>
+  <!-- Name exakt wie im OAuth-Zustimmungsbildschirm -->
+  <h1>PARC FERMÉ</h1>
+  <p class="sub">Dein Paddock für jedes Rennwochenende.</p>
+  <p class="lead">Zeitplan und Ergebnisse, dein Urteil zu strittigen Szenen, Tippspiel, Rennbingo und mehr &mdash; kostenlos, ohne Werbung und ohne Tracking.</p>
+  <div class="ctas">
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=app.parcferme&amp;hl=de" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 2.6c-.3.3-.4.7-.4 1.2v16.4c0 .5.1.9.4 1.2l9.2-9.4z"/><path fill="currentColor" opacity=".8" d="M16.5 15.1 13.4 12l3.1-3.1 3.7 2.1c1 .6 1 1.4 0 2z"/><path fill="currentColor" opacity=".6" d="m16.5 8.9-12.3-7L13.4 12z"/><path fill="currentColor" opacity=".9" d="M13.4 12 4.2 21.4l12.3-7z"/></svg>Bei Google Play laden</a>
+    <a class="btn ghost" href="#features">Funktionen ansehen</a>
   </div>
+  <div class="phone"><img src="img/shot-paddock.de.webp" alt="Dein Paddock" width="390" height="718"></div>
+</section>
 
-  <footer>
-    <!-- Alle fuenf Rechtstexte werden von tools/legal-export.js erzeugt und
-         liegen im selben Verzeichnis. Sie waren bisher vorhanden, aber von
-         nirgends verlinkt — insbesondere das Impressum, das fuer eine Seite
-         eines deutschen Anbieters leicht erreichbar sein muss.
-         Dateinamen: impressum -> imprint, AGB -> terms-of-sale,
-         Nutzungsbedingungen -> terms, Datenschutz -> privacy,
-         Speicherung -> storage. -->
-    <div class="links">
-      <a href="imprint.html">Impressum</a>
-      <a href="privacy.html">Datenschutzerklärung</a>
-      <a href="terms-of-sale.html">AGB</a>
-      <a href="terms.html">Nutzungsbedingungen</a>
-      <a href="storage.html">Speicherung auf dem Gerät</a>
-      <a href="mailto:parcferme.app@gmail.com">Kontakt</a>
-    </div>
-    <p class="small">© 2026 PARC FERMÉ — ein privates Projekt aus Deutschland.<br>
-      Inoffizielle Fan-App. Keine offizielle Formel-1-Anwendung.</p>
-  </footer>
+<h2 id="features">Was dich erwartet</h2>
+<ol class="feats">
+  <li><i>01</i><b>Rennwochenende</b><p>Alle Sessions mit Startzeit in deiner Zeitzone, Countdown und Wetter. Danach Ergebnisse mit Podium &mdash; auch für den Sprint.</p></li>
+  <li><i>02</i><b>Wahre Wertung</b><p>Strittige Szenen jedes Rennens: Du entscheidest, ob es eine Strafe hätte geben müssen. So sieht die WM nach dem Urteil der Fans aus.</p></li>
+  <li><i>03</i><b>Tippspiel</b><p>Tippe die Top 10 vor dem Start, sammle Punkte und miss dich in eigenen Räumen mit Freunden.</p></li>
+  <li><i>04</i><b>Rennbingo</b><p>Füll deine Karte mit neun Ereignissen. Komplette Linien zählen doppelt; nach der Auswertung siehst du die Karten der anderen.</p></li>
+  <li><i>05</i><b>Fan-Power</b><p>Wähle nach jedem Rennen den besten Fahrer und das beste Auto &mdash; pro Rennen und über die Saison.</p></li>
+  <li><i>06</i><b>Statistiken</b><p>Teamduelle, Rekorde und ein Baukasten für eigene Auswertungen, für Fahrer und Teams.</p></li>
+  <li><i>07</i><b>Rennwort</b><p>Jeden Tag ein Begriff aus dem Motorsport in sechs Versuchen. Bau deine Serie auf.</p></li>
+  <li><i>08</i><b>Und mehr</b><p>Startampel, Quiz &bdquo;Grill the Fan&ldquo;, Umfragen, Watch-Along-Chat zum Rennen und Schlagzeilen als Storys.</p></li>
+</ol>
 
+<h2>Ein Blick in die App</h2>
+<div class="shots">
+  <figure><img src="img/shot-scenes.de.webp" alt="Wahre Wertung" loading="lazy" width="390" height="718"><figcaption>Wahre Wertung</figcaption></figure>
+  <figure><img src="img/shot-tipp.de.webp" alt="Tippspiel" loading="lazy" width="390" height="718"><figcaption>Tippspiel</figcaption></figure>
+  <figure><img src="img/shot-bingo.de.webp" alt="Rennbingo" loading="lazy" width="390" height="718"><figcaption>Rennbingo</figcaption></figure>
+  <figure><img src="img/shot-fan.de.webp" alt="Fan-Power" loading="lazy" width="390" height="718"><figcaption>Fan-Power</figcaption></figure>
+  <figure><img src="img/shot-stats.de.webp" alt="Statistiken" loading="lazy" width="390" height="718"><figcaption>Statistiken</figcaption></figure>
 </div>
+
+<h2>Fair und privat</h2>
+<div class="fair">
+  <div class="card"><b>Kostenlos</b><span>Keine Käufe, kein Abo, keine Werbung.</span></div>
+  <div class="card"><b>Kein Tracking</b><span>Keine Analyse-Werkzeuge, keine Werbenetzwerke, kein Verkauf von Daten.</span></div>
+  <div class="card"><b>Deine Daten</b><span>Konto jederzeit in der App löschbar &mdash; sofort oder mit 30 Tagen Frist.</span></div>
+</div>
+
+<h2>Anmeldung mit Google</h2>
+<div class="prose"><p>Für Tippspiel, Abstimmungen, Spiele und Chat brauchst du ein Konto. Du meldest dich mit deinem Google-Konto an &mdash; dabei übernehmen wir nur deine E-Mail-Adresse und deinen Namen, um dein Profil anzulegen. Auf weitere Daten deines Google-Kontos greifen wir nicht zu.</p><p>Was wir verarbeiten und warum, steht in der <a href="privacy.html">Datenschutzerklärung</a>.</p></div>
+
+<div class="note"><b>Hinweis:</b> PARC FERMÉ ist ein privates Fan-Projekt und steht in keiner Verbindung zur Formula One Group, der FIA oder einem Rennstall. Alle Marken- und Teamnamen gehören ihren jeweiligen Inhabern.</div>
+<footer>
+  <nav class="flinks"><a href="./" aria-current="page">Startseite</a><a href="imprint.html">Impressum</a><a href="terms-of-sale.html">AGB</a><a href="terms.html">Nutzungsbedingungen</a><a href="privacy.html">Datenschutz</a><a href="storage.html">Speicher</a><a href="delete-account.html">Konto löschen</a><a href="mailto:parcferme.app@gmail.com">Kontakt</a></nav>
+  <p class="copy">© 2026 PARC FERMÉ — ein privates Projekt aus Deutschland. Inoffizielle Fan-App, keine offizielle Formel-1-Anwendung.</p>
+</footer>
+</main>
 </body>
 </html>
